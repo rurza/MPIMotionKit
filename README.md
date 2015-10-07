@@ -1,6 +1,6 @@
 # MPIMotionKit
 
-[![CI Status](http://img.shields.io/travis/Adam Różyński/MPIMotionKit.svg?style=flat)](https://travis-ci.org/Adam Różyński/MPIMotionKit)
+[![CI Status](http://img.shields.io/travis/Adam Różyński/MPIMotionKit.svg?style=flat)](https://travis-ci.org/Adam Różyński/MPIMotionKit)
 [![Version](https://img.shields.io/cocoapods/v/MPIMotionKit.svg?style=flat)](http://cocoapods.org/pods/MPIMotionKit)
 [![License](https://img.shields.io/cocoapods/l/MPIMotionKit.svg?style=flat)](http://cocoapods.org/pods/MPIMotionKit)
 [![Platform](https://img.shields.io/cocoapods/p/MPIMotionKit.svg?style=flat)](http://cocoapods.org/pods/MPIMotionKit)
@@ -34,9 +34,11 @@ So using it is super simple.
 Take code from example:
 ```objective-c
 
-[[MPIMotionManager sharedManager] getAccelerometerValuesWithTimeInterval:UPDATE_INTERVAL andHandler:^(MPIMotionData motionAccelData) {
-//do something with motionAccelData like:
-    NSLog@(@"%f %f %f"motionAccelData.x, motionAccelData.y, motionAccelData.z);
+[[MPIMotionManager sharedManager] getAccelerometerValuesWithTimeInterval:UPDATE_INTERVAL 
+                                                              andHandler:^(MPIMotionData motionAccelData) 
+{
+    //do something with motionAccelData like:
+    NSLog(@"%f %f %f"motionAccelData.x, motionAccelData.y, motionAccelData.z);
 }];
 
 
@@ -44,7 +46,7 @@ Take code from example:
 
 ## Author
 
-Adam Różyński, adam@micropixels.pl
+Adam Różyński, adam@micropixels.pl
 
 ## License
 
