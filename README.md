@@ -23,9 +23,23 @@ pod "MPIMotionKit"
 ##Using
 
 ###Initialize
-MPIMotionManager is a singleton class
+
+MPIMotionManager is a singleton class.
+
 ```objective-c
 [MPIMotionManager sharedManager];
+```
+
+So using it is super simple.
+Take code from example:
+```objective-c
+
+[[MPIMotionManager sharedManager] getAccelerometerValuesWithTimeInterval:UPDATE_INTERVAL andHandler:^(MPIMotionData motionAccelData) {
+//do something with motionAccelData like:
+    NSLog@(@"%f %f %f"motionAccelData.x, motionAccelData.y, motionAccelData.z);
+}];
+
+
 ```
 
 ## Author
