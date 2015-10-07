@@ -24,7 +24,7 @@ Super simple to use wrapper for CoreMotion written in Objective-C. Idea based on
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Adam Różyński" => "adam@micropixels.pl" }
-  s.source           = { :git => "https://github.com/rurza/MPIMotionKit/MPIMotionKit.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/rurza/MPIMotionKit.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/rurza'
 
   s.platform     = :ios, '8.0'
