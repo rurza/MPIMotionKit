@@ -34,7 +34,8 @@ So using it is super simple.
 Take code from example:
 ```objective-c
 
-[[MPIMotionManager sharedManager] getAccelerometerValuesWithTimeInterval:UPDATE_INTERVAL andHandler:^(MPIMotionData motionAccelData) {
+[[MPIMotionManager sharedManager] getAccelerometerValuesWithTimeInterval:UPDATE_INTERVAL 
+andHandler:^(MPIMotionData motionAccelData) {
 //do something with motionAccelData like:
     NSLog@(@"%f %f %f"motionAccelData.x, motionAccelData.y, motionAccelData.z);
 }];
