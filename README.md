@@ -35,16 +35,10 @@ Take code from example:
 ```objective-c
 
 [[MPIMotionManager sharedManager] getAccelerometerValuesWithTimeInterval:UPDATE_INTERVAL 
-<<<<<<< HEAD
-andHandler:^(MPIMotionData motionAccelData) {
-//do something with motionAccelData like:
-    NSLog@(@"%f %f %f"motionAccelData.x, motionAccelData.y, motionAccelData.z);
-=======
                                                               andHandler:^(MPIMotionData motionAccelData) 
 {
     //do something with motionAccelData like:
     NSLog(@"%f %f %f", motionAccelData.x, motionAccelData.y, motionAccelData.z);
->>>>>>> 18fcc78f343288c88306dbaba96810f6ee5f281e
 }];
 
 
