@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14C5E00912B7FE317F35DB2CF2676140 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5517559072B50B0A188F772F9BC0E5E1 /* CoreMotion.framework */; };
+		1B1EFFD0B714CB1F4826192793920678 /* Pods-MPIMotionKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C0FE23D4A256A0A09B78FAD603EE7F /* Pods-MPIMotionKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A04D62A1A40542663FD1CD1CD0AECA6 /* MPIMotionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF396AE6EE9EB29CCDC0105B49287E6 /* MPIMotionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		363979D52543850A95C481C11DD90F97 /* Pods-MPIMotionKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7EFFDD6838A4ADDB57E6BAB4679286 /* Pods-MPIMotionKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AA01F7DE15202E15451FA6530D9A9AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEF5BCC3F11936126623177FEDA09CE /* Foundation.framework */; };
+		6CAF3FE2173BAEAA0EFDD7C9B9539F78 /* MPIMotionKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1049A6ABBDE914F0D914ECC191402AA0 /* MPIMotionKit.bundle */; };
+		70AAA13357E48F9699C5466B2315AA5C /* MPIMotionKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0315C196ABCEC3C8C74B3C6FD30ECE /* MPIMotionKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7359066638E42CE6FCFC11B492E6B98D /* MPIMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 851421E0FA6A2EE86B0828E829317417 /* MPIMotionManager.m */; };
+		A850FBAD9C4E91B97D95F0ACE4ED0AA7 /* Pods-MPIMotionKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 966D79BD3AC324BB46B3A076FBE45789 /* Pods-MPIMotionKit_Tests-dummy.m */; };
+		D0662BCB36AB898EC4EECACB40B1FF1A /* Pods-MPIMotionKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E636BC0D97988A99B9929BBCDF39412A /* Pods-MPIMotionKit_Example-dummy.m */; };
+		E4F80098E8A044D5849DEB176B0F8BDD /* MPIMotionKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 621A9D76BC31B0EBA061DF6A54E5982D /* MPIMotionKit-dummy.m */; };
+		EE64710F06503DA43E672140ADA42112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEF5BCC3F11936126623177FEDA09CE /* Foundation.framework */; };
+		F8FE51054ED33EAE76B0F7CBC3C12DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEF5BCC3F11936126623177FEDA09CE /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		388CD4A3F5DEFACE5343D3BD564CEF0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E9C1BFEA898577DB58C2C4E5A30F10;
+			remoteInfo = MPIMotionKit;
+		};
+		D0B4848D29793F79AE973C5999253C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220DCDFC45ECA43A5E9F13E88722E218;
+			remoteInfo = "MPIMotionKit-MPIMotionKit";
+		};
+		FF8C36EEE7880990E9974553EA5C650F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E9C1BFEA898577DB58C2C4E5A30F10;
+			remoteInfo = MPIMotionKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009D87C0EA4F43828DCB35EAFB2EBC7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1049A6ABBDE914F0D914ECC191402AA0 /* MPIMotionKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPIMotionKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBE772776B122462956E6EE6D6FA7E0 /* Pods-MPIMotionKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPIMotionKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2D6CA89AA14F12272DD9649B363A7585 /* Pods-MPIMotionKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MPIMotionKit_Tests.modulemap"; sourceTree = "<group>"; };
+		3BF396AE6EE9EB29CCDC0105B49287E6 /* MPIMotionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPIMotionManager.h; sourceTree = "<group>"; };
+		3E7EFFDD6838A4ADDB57E6BAB4679286 /* Pods-MPIMotionKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MPIMotionKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5517559072B50B0A188F772F9BC0E5E1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		5A0315C196ABCEC3C8C74B3C6FD30ECE /* MPIMotionKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPIMotionKit-umbrella.h"; sourceTree = "<group>"; };
+		5B2AC06436D819F0AA1AB80014563D62 /* Pods-MPIMotionKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MPIMotionKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		60C2EE1D22B50565B8270DB615E067B8 /* Pods-MPIMotionKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MPIMotionKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		621A9D76BC31B0EBA061DF6A54E5982D /* MPIMotionKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPIMotionKit-dummy.m"; sourceTree = "<group>"; };
+		636313D8CA8667B316970985F1ADC2E7 /* Pods-MPIMotionKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MPIMotionKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		673014EC820777F392E761061A3DB74D /* Pods_MPIMotionKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPIMotionKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF0E6EC48C125454B52948B4F6EF73D /* Pods-MPIMotionKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPIMotionKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7D2F4B201451F5CDE1D8C6C800EF353A /* MPIMotionKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MPIMotionKit.modulemap; sourceTree = "<group>"; };
+		83C0FE23D4A256A0A09B78FAD603EE7F /* Pods-MPIMotionKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MPIMotionKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		851421E0FA6A2EE86B0828E829317417 /* MPIMotionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPIMotionManager.m; sourceTree = "<group>"; };
+		8F42E6CAF90C1F17C65C5F1B4593EDEF /* Pods-MPIMotionKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MPIMotionKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		925BFB66DBD9E982D9DE04862A9D5432 /* Pods_MPIMotionKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPIMotionKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9422D825E0BDD807866FF66CD3DCC3FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966D79BD3AC324BB46B3A076FBE45789 /* Pods-MPIMotionKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MPIMotionKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		968A64972CE3A3709A87B90957C30FE5 /* Pods-MPIMotionKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MPIMotionKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		9922995A05ABFB8BC3042EC86C2527A4 /* Pods-MPIMotionKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPIMotionKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9FD6E1041D9034DA882EF343266BDF0F /* Pods-MPIMotionKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MPIMotionKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A30171CF9724ABB5BF656B9794AD6171 /* Pods-MPIMotionKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MPIMotionKit_Example-resources.sh"; sourceTree = "<group>"; };
+		A67B713F350DF94AAAA6399A0725699E /* Pods-MPIMotionKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MPIMotionKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		ACDF60797C0426686B68648727406844 /* MPIMotionKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPIMotionKit.xcconfig; sourceTree = "<group>"; };
+		B24A41D5A7A7E7B172059B41C65E5949 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C16198DC3CD8274C2A749CA5EFE7FF80 /* MPIMotionKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPIMotionKit-prefix.pch"; sourceTree = "<group>"; };
+		C1952ACF4A9D619FB7A6D3A624961396 /* Pods-MPIMotionKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPIMotionKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4F0B9F952140197862D7C8BD7031CE9 /* MPIMotionKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MPIMotionKit-Private.xcconfig"; sourceTree = "<group>"; };
+		E636BC0D97988A99B9929BBCDF39412A /* Pods-MPIMotionKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MPIMotionKit_Example-dummy.m"; sourceTree = "<group>"; };
+		FA72D0B717844C8880DD84CF2FC93336 /* Pods-MPIMotionKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MPIMotionKit_Example.modulemap"; sourceTree = "<group>"; };
+		FEEF5BCC3F11936126623177FEDA09CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FF8C8B3DFFEFECC4FB5C7F1E508BC3FA /* MPIMotionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MPIMotionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		315ABE6BCF306231535801790F51C10F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C5E00912B7FE317F35DB2CF2676140 /* CoreMotion.framework in Frameworks */,
+				6AA01F7DE15202E15451FA6530D9A9AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570909F3A427C5006578F313EE8CA570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE64710F06503DA43E672140ADA42112 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6051B1029A6FA9D57545214CE9C73DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD86622723821C2BB929C97B524D81C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FE51054ED33EAE76B0F7CBC3C12DE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0168E9D91A85770EA8233831DE7D28BE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1A7368C97A11E91A2578503FE9A651E /* Pods-MPIMotionKit_Example */,
+				75A96F13080B85A63966111021AE5331 /* Pods-MPIMotionKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2FDB1B4E0B477BFADBE34ABAEE727164 /* MPIMotionKit */ = {
+			isa = PBXGroup;
+			children = (
+				BC7C4C7C1B6F2BC5D92BCCAF17264A9E /* Pod */,
+				8E8F85A7DD7CA30A679C8F00374B14DF /* Support Files */,
+			);
+			name = MPIMotionKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B48874C64264A371D9DC95A67FB8845D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75A96F13080B85A63966111021AE5331 /* Pods-MPIMotionKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B24A41D5A7A7E7B172059B41C65E5949 /* Info.plist */,
+				2D6CA89AA14F12272DD9649B363A7585 /* Pods-MPIMotionKit_Tests.modulemap */,
+				60C2EE1D22B50565B8270DB615E067B8 /* Pods-MPIMotionKit_Tests-acknowledgements.markdown */,
+				9FD6E1041D9034DA882EF343266BDF0F /* Pods-MPIMotionKit_Tests-acknowledgements.plist */,
+				966D79BD3AC324BB46B3A076FBE45789 /* Pods-MPIMotionKit_Tests-dummy.m */,
+				A67B713F350DF94AAAA6399A0725699E /* Pods-MPIMotionKit_Tests-frameworks.sh */,
+				968A64972CE3A3709A87B90957C30FE5 /* Pods-MPIMotionKit_Tests-resources.sh */,
+				3E7EFFDD6838A4ADDB57E6BAB4679286 /* Pods-MPIMotionKit_Tests-umbrella.h */,
+				C1952ACF4A9D619FB7A6D3A624961396 /* Pods-MPIMotionKit_Tests.debug.xcconfig */,
+				2CBE772776B122462956E6EE6D6FA7E0 /* Pods-MPIMotionKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-MPIMotionKit_Tests";
+			path = "Target Support Files/Pods-MPIMotionKit_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				E888556423D9D9F43989B1396E17C4C6 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				0168E9D91A85770EA8233831DE7D28BE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8D8002FA3DFA6B19BE357B1A6346EC3A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3BF396AE6EE9EB29CCDC0105B49287E6 /* MPIMotionManager.h */,
+				851421E0FA6A2EE86B0828E829317417 /* MPIMotionManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8E8F85A7DD7CA30A679C8F00374B14DF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				009D87C0EA4F43828DCB35EAFB2EBC7D /* Info.plist */,
+				7D2F4B201451F5CDE1D8C6C800EF353A /* MPIMotionKit.modulemap */,
+				ACDF60797C0426686B68648727406844 /* MPIMotionKit.xcconfig */,
+				D4F0B9F952140197862D7C8BD7031CE9 /* MPIMotionKit-Private.xcconfig */,
+				621A9D76BC31B0EBA061DF6A54E5982D /* MPIMotionKit-dummy.m */,
+				C16198DC3CD8274C2A749CA5EFE7FF80 /* MPIMotionKit-prefix.pch */,
+				5A0315C196ABCEC3C8C74B3C6FD30ECE /* MPIMotionKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MPIMotionKit";
+			sourceTree = "<group>";
+		};
+		B48874C64264A371D9DC95A67FB8845D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5517559072B50B0A188F772F9BC0E5E1 /* CoreMotion.framework */,
+				FEEF5BCC3F11936126623177FEDA09CE /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BC7C4C7C1B6F2BC5D92BCCAF17264A9E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8D8002FA3DFA6B19BE357B1A6346EC3A /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		C1A7368C97A11E91A2578503FE9A651E /* Pods-MPIMotionKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9422D825E0BDD807866FF66CD3DCC3FB /* Info.plist */,
+				FA72D0B717844C8880DD84CF2FC93336 /* Pods-MPIMotionKit_Example.modulemap */,
+				636313D8CA8667B316970985F1ADC2E7 /* Pods-MPIMotionKit_Example-acknowledgements.markdown */,
+				8F42E6CAF90C1F17C65C5F1B4593EDEF /* Pods-MPIMotionKit_Example-acknowledgements.plist */,
+				E636BC0D97988A99B9929BBCDF39412A /* Pods-MPIMotionKit_Example-dummy.m */,
+				5B2AC06436D819F0AA1AB80014563D62 /* Pods-MPIMotionKit_Example-frameworks.sh */,
+				A30171CF9724ABB5BF656B9794AD6171 /* Pods-MPIMotionKit_Example-resources.sh */,
+				83C0FE23D4A256A0A09B78FAD603EE7F /* Pods-MPIMotionKit_Example-umbrella.h */,
+				9922995A05ABFB8BC3042EC86C2527A4 /* Pods-MPIMotionKit_Example.debug.xcconfig */,
+				7CF0E6EC48C125454B52948B4F6EF73D /* Pods-MPIMotionKit_Example.release.xcconfig */,
+			);
+			name = "Pods-MPIMotionKit_Example";
+			path = "Target Support Files/Pods-MPIMotionKit_Example";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1049A6ABBDE914F0D914ECC191402AA0 /* MPIMotionKit.bundle */,
+				FF8C8B3DFFEFECC4FB5C7F1E508BC3FA /* MPIMotionKit.framework */,
+				673014EC820777F392E761061A3DB74D /* Pods_MPIMotionKit_Example.framework */,
+				925BFB66DBD9E982D9DE04862A9D5432 /* Pods_MPIMotionKit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E888556423D9D9F43989B1396E17C4C6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB1B4E0B477BFADBE34ABAEE727164 /* MPIMotionKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4F8A07A4BDE3E8548B13780A243515EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363979D52543850A95C481C11DD90F97 /* Pods-MPIMotionKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A71C759C0B8518E12DF715A8413B56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AAA13357E48F9699C5466B2315AA5C /* MPIMotionKit-umbrella.h in Headers */,
+				2A04D62A1A40542663FD1CD1CD0AECA6 /* MPIMotionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3980380D14835B119A3279EE56A52D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1EFFD0B714CB1F4826192793920678 /* Pods-MPIMotionKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		220DCDFC45ECA43A5E9F13E88722E218 /* MPIMotionKit-MPIMotionKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40B9B0D67CDC94218238C1D3D3AF07A1 /* Build configuration list for PBXNativeTarget "MPIMotionKit-MPIMotionKit" */;
+			buildPhases = (
+				8B7174479A849CEDD3EF8E15D2000E28 /* Sources */,
+				6051B1029A6FA9D57545214CE9C73DD3 /* Frameworks */,
+				E2E7C9A6086EE2A35022697E9BC85B9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MPIMotionKit-MPIMotionKit";
+			productName = "MPIMotionKit-MPIMotionKit";
+			productReference = 1049A6ABBDE914F0D914ECC191402AA0 /* MPIMotionKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		872F86B31670A93150CE050C9B8E2204 /* Pods-MPIMotionKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DF72B8EC100431D0386371BBECBA3D /* Build configuration list for PBXNativeTarget "Pods-MPIMotionKit_Tests" */;
+			buildPhases = (
+				6238BB17F9CC58851F53D24602F7CA32 /* Sources */,
+				570909F3A427C5006578F313EE8CA570 /* Frameworks */,
+				4F8A07A4BDE3E8548B13780A243515EA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8FE9CC1EB4755F511EB7661E888D924 /* PBXTargetDependency */,
+			);
+			name = "Pods-MPIMotionKit_Tests";
+			productName = "Pods-MPIMotionKit_Tests";
+			productReference = 925BFB66DBD9E982D9DE04862A9D5432 /* Pods_MPIMotionKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		90E9C1BFEA898577DB58C2C4E5A30F10 /* MPIMotionKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72D6FE6E4952FE60F5A9475687521000 /* Build configuration list for PBXNativeTarget "MPIMotionKit" */;
+			buildPhases = (
+				8B76F0022271C2996A164D543A9E70BD /* Sources */,
+				315ABE6BCF306231535801790F51C10F /* Frameworks */,
+				FB00EA85520CCD50AF0CFD8A1A2B26B7 /* Resources */,
+				68A71C759C0B8518E12DF715A8413B56 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D37D4B0A970D019BA193EEC0DF937E0 /* PBXTargetDependency */,
+			);
+			name = MPIMotionKit;
+			productName = MPIMotionKit;
+			productReference = FF8C8B3DFFEFECC4FB5C7F1E508BC3FA /* MPIMotionKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B23B25A522255F05369990675BAE099F /* Pods-MPIMotionKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3E46AA32405DACDCC59FC981CFF2F9 /* Build configuration list for PBXNativeTarget "Pods-MPIMotionKit_Example" */;
+			buildPhases = (
+				A453A5D487404B40101D06240DED1F41 /* Sources */,
+				7FD86622723821C2BB929C97B524D81C /* Frameworks */,
+				8B3980380D14835B119A3279EE56A52D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95ABBEECC99CBF69E83A178D350FF0BB /* PBXTargetDependency */,
+			);
+			name = "Pods-MPIMotionKit_Example";
+			productName = "Pods-MPIMotionKit_Example";
+			productReference = 673014EC820777F392E761061A3DB74D /* Pods_MPIMotionKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90E9C1BFEA898577DB58C2C4E5A30F10 /* MPIMotionKit */,
+				220DCDFC45ECA43A5E9F13E88722E218 /* MPIMotionKit-MPIMotionKit */,
+				B23B25A522255F05369990675BAE099F /* Pods-MPIMotionKit_Example */,
+				872F86B31670A93150CE050C9B8E2204 /* Pods-MPIMotionKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2E7C9A6086EE2A35022697E9BC85B9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB00EA85520CCD50AF0CFD8A1A2B26B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAF3FE2173BAEAA0EFDD7C9B9539F78 /* MPIMotionKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6238BB17F9CC58851F53D24602F7CA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A850FBAD9C4E91B97D95F0ACE4ED0AA7 /* Pods-MPIMotionKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B7174479A849CEDD3EF8E15D2000E28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B76F0022271C2996A164D543A9E70BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F80098E8A044D5849DEB176B0F8BDD /* MPIMotionKit-dummy.m in Sources */,
+				7359066638E42CE6FCFC11B492E6B98D /* MPIMotionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A453A5D487404B40101D06240DED1F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0662BCB36AB898EC4EECACB40B1FF1A /* Pods-MPIMotionKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D37D4B0A970D019BA193EEC0DF937E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MPIMotionKit-MPIMotionKit";
+			target = 220DCDFC45ECA43A5E9F13E88722E218 /* MPIMotionKit-MPIMotionKit */;
+			targetProxy = D0B4848D29793F79AE973C5999253C11 /* PBXContainerItemProxy */;
+		};
+		95ABBEECC99CBF69E83A178D350FF0BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MPIMotionKit;
+			target = 90E9C1BFEA898577DB58C2C4E5A30F10 /* MPIMotionKit */;
+			targetProxy = 388CD4A3F5DEFACE5343D3BD564CEF0C /* PBXContainerItemProxy */;
+		};
+		E8FE9CC1EB4755F511EB7661E888D924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MPIMotionKit;
+			target = 90E9C1BFEA898577DB58C2C4E5A30F10 /* MPIMotionKit */;
+			targetProxy = FF8C36EEE7880990E9974553EA5C650F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1571793753199E3FAA94795A4CE914C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F0B9F952140197862D7C8BD7031CE9 /* MPIMotionKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MPIMotionKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		231FDFFEA83CDF6962B699EC2C4CA0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F0B9F952140197862D7C8BD7031CE9 /* MPIMotionKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MPIMotionKit/MPIMotionKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MPIMotionKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MPIMotionKit/MPIMotionKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MPIMotionKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A86EAD419BF384C655FBC66BE30420C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1952ACF4A9D619FB7A6D3A624961396 /* Pods-MPIMotionKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MPIMotionKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MPIMotionKit_Tests/Pods-MPIMotionKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MPIMotionKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEC1F46204698F5D749715F109D93D64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CBE772776B122462956E6EE6D6FA7E0 /* Pods-MPIMotionKit_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MPIMotionKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MPIMotionKit_Tests/Pods-MPIMotionKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MPIMotionKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF0D9F88AE98974804AA7BAC54746E1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F0B9F952140197862D7C8BD7031CE9 /* MPIMotionKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MPIMotionKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B1CB3B6AE8686DDB8225A1F7ED10FFED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF0E6EC48C125454B52948B4F6EF73D /* Pods-MPIMotionKit_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MPIMotionKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MPIMotionKit_Example/Pods-MPIMotionKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MPIMotionKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6753A215EE086D0A9B4E05DACB5FAC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9922995A05ABFB8BC3042EC86C2527A4 /* Pods-MPIMotionKit_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MPIMotionKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MPIMotionKit_Example/Pods-MPIMotionKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MPIMotionKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8E088198DB9840D5CD2E3F11077973A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F0B9F952140197862D7C8BD7031CE9 /* MPIMotionKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MPIMotionKit/MPIMotionKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MPIMotionKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MPIMotionKit/MPIMotionKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MPIMotionKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3E46AA32405DACDCC59FC981CFF2F9 /* Build configuration list for PBXNativeTarget "Pods-MPIMotionKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6753A215EE086D0A9B4E05DACB5FAC9 /* Debug */,
+				B1CB3B6AE8686DDB8225A1F7ED10FFED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40B9B0D67CDC94218238C1D3D3AF07A1 /* Build configuration list for PBXNativeTarget "MPIMotionKit-MPIMotionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1571793753199E3FAA94795A4CE914C6 /* Debug */,
+				AF0D9F88AE98974804AA7BAC54746E1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72D6FE6E4952FE60F5A9475687521000 /* Build configuration list for PBXNativeTarget "MPIMotionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E088198DB9840D5CD2E3F11077973A /* Debug */,
+				231FDFFEA83CDF6962B699EC2C4CA0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DF72B8EC100431D0386371BBECBA3D /* Build configuration list for PBXNativeTarget "Pods-MPIMotionKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86EAD419BF384C655FBC66BE30420C1 /* Debug */,
+				AEC1F46204698F5D749715F109D93D64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

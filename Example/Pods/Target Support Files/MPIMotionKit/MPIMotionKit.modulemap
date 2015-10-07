@@ -1,0 +1,6 @@
+framework module MPIMotionKit {
+  umbrella header "MPIMotionKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

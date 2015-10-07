@@ -20,6 +20,14 @@ it, simply add the following line to your Podfile:
 pod "MPIMotionKit"
 ```
 
+##Using
+
+###Initialize
+MPIMotionManager is a singleton class
+```objective-c
+[MPIMotionManager sharedManager];
+```
+
 ## Author
 
 Adam Różyński, adam@micropixels.pl

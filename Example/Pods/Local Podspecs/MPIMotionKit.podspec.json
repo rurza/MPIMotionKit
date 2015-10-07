@@ -1,0 +1,30 @@
+{
+  "name": "MPIMotionKit",
+  "version": "0.1.0",
+  "summary": "A short description of MPIMotionKit.",
+  "description": "",
+  "homepage": "https://github.com/rurza/MPIMotionKit",
+  "license": "MIT",
+  "authors": {
+    "Adam Różyński": "adam@micropixels.pl"
+  },
+  "source": {
+    "git": "https://github.com/https://github.com/rurza/MPIMotionKit/MPIMotionKit.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/rurza",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "MPIMotionKit": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "frameworks": [
+    "Foundation",
+    "CoreMotion"
+  ]
+}

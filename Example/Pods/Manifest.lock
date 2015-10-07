@@ -1,0 +1,14 @@
+PODS:
+  - MPIMotionKit (0.1.0)
+
+DEPENDENCIES:
+  - MPIMotionKit (from `../`)
+
+EXTERNAL SOURCES:
+  MPIMotionKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MPIMotionKit: 118d519a39ed548fd36405e6fab4a45f9cb8c84c
+
+COCOAPODS: 0.38.2
