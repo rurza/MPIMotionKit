@@ -38,7 +38,7 @@ Take code from example:
                                                               andHandler:^(MPIMotionData motionAccelData) 
 {
     //do something with motionAccelData like:
-    NSLog(@"%f %f %f"motionAccelData.x, motionAccelData.y, motionAccelData.z);
+    NSLog(@"%f %f %f", motionAccelData.x, motionAccelData.y, motionAccelData.z);
 }];
 
 
