@@ -266,6 +266,11 @@
     }
 }
 
+-(void)startDeviceMotionUpdates
+{
+    [self.p_motionManager startDeviceMotionUpdates];
+}
+
 #pragma mark - Stop updates
 
 -(void)stopAccelerometerUpdates
@@ -285,6 +290,20 @@
     [self.p_motionManager stopDeviceMotionUpdates];
 }
 
+-(void)getSingleAccelerationValues:(void (^)(MPIMotionData singleAccelData))values
+{
+    [self getAccelerometerValuesWithTimeInterval:0.2 andHandler:^(MPIMotionData accelData) {
+        values(accelData);
+    }];
+    [self stopAccelerometerUpdates];
+}
+-(void)getSingleGyroValues:(void (^)(MPIMotionData singleGyroData))values
+{
+    [self getGyroValuesWithTimeInterval:0.2 andHandler:^(MPIMotionData gyroscopeData) {
+        values(gyroscopeData);
+    }];
+    [self stopGyroUpdates];
+}
 
 #pragma mark - Helper methods
 -(double)vectorForData:(MPIMotionData)data
@@ -292,5 +311,9 @@
     return sqrt(data.x * data.x + data.y * data.y + data.z * data.z);
 }
 
+-(CMDeviceMotion *)deviceMotion
+{
+    return self.p_motionManager.deviceMotion;
+}
 
 @end

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4FD5E2E3922A54B248640F6B /* Pods_MPIMotionKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3AF2C8BD1BC734B233B0571 /* Pods_MPIMotionKit_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		5B38C8991BC56A1A009D92B3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B38C8981BC56A1A009D92B3 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		5B38C8991BC56A1A009D92B3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B38C8981BC56A1A009D92B3 /* Launch Screen.storyboard */; };
+		5B6AF5A81BCAAB260005FE78 /* MPIGyroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AF5A71BCAAB260005FE78 /* MPIGyroViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 		241B84AC18C1143B82D1AB98 /* MPIMotionKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MPIMotionKit.podspec; path = ../MPIMotionKit.podspec; sourceTree = "<group>"; };
 		36FF201F5982685ACF350EC0 /* Pods-MPIMotionKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPIMotionKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MPIMotionKit_Example/Pods-MPIMotionKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5B38C8981BC56A1A009D92B3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5B6AF5A61BCAAB260005FE78 /* MPIGyroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPIGyroViewController.h; sourceTree = "<group>"; };
+		5B6AF5A71BCAAB260005FE78 /* MPIGyroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPIGyroViewController.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MPIMotionKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPIMotionKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -145,6 +148,8 @@
 			children = (
 				6003F59C195388D20070C39A /* MPIAppDelegate.h */,
 				6003F59D195388D20070C39A /* MPIAppDelegate.m */,
+				5B6AF5A61BCAAB260005FE78 /* MPIGyroViewController.h */,
+				5B6AF5A71BCAAB260005FE78 /* MPIGyroViewController.m */,
 				6003F5A5195388D20070C39A /* MPIViewController.h */,
 				6003F5A6195388D20070C39A /* MPIViewController.m */,
 				5B38C8981BC56A1A009D92B3 /* Launch Screen.storyboard */,
@@ -394,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6AF5A81BCAAB260005FE78 /* MPIGyroViewController.m in Sources */,
 				6003F59E195388D20070C39A /* MPIAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MPIViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

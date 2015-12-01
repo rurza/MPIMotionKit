@@ -12,6 +12,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    ///Irrelevant to task
+    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init]
+                                      forBarPosition:UIBarPositionAny
+                                          barMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
     // Override point for customization after application launch.
     return YES;
 }
